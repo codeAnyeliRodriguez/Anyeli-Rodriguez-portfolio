@@ -45,13 +45,13 @@ const maquinaescribir1 = (text = '', tiempo = 200, etiqueta = '') => {
   }, tiempo);
 }
 
-// parq que el efecto se ejecute luego que la pagina cargue
- window.onload = function() {
-  maquinaescribir1('¡Hola mundo! soy Anyeli Rodríguez Desarrolladora Full-Stack. Nivel Junior. Este es mi portfolio donde estarán varios de mis proyectos tanto mini juegos como también de utilidades y mas, espero les sean de su agrado.', 50, maquina1);
+// para que el efecto se ejecute luego que la pagina cargue
+window.onload = function () {
+  maquinaescribir1('¡Hola mundo! soy Anyeli Rodríguez Desarrolladora Full-Stack. Este es mi portfolio donde estarán varios de mis proyectos tanto mini juegos como también de utilidades y mas, espero les sean de su agrado.', 50, maquina1);
 
- }
+}
 
-maquinaescribir1('Mis Habilidades',80, maquina2);
+maquinaescribir1('Mis Habilidades', 80, maquina2);
 
 
 // funcionalidad de desplazar hacia arriba

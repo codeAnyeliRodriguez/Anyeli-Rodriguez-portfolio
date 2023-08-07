@@ -20,10 +20,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-  <title>Anyeli Rodriguez &#128151; &#128187; |Beta</title>
+  <title>Anyeli Rodriguez &#128151; &#128187;</title>
 </head>
-
 <body>
+  
   <!-- efecto de carga -->
   <div id="loader">
     <div class="spinner"></div>
@@ -60,7 +60,7 @@
   <!-- ---- -->
   <section class="imagen-fondo" id="imagen-fondo">
     <div class="transparent-container" title="me">
-      <div class="transparent">
+      <div class="transparent" id="transparent">
         <img src="./imagenes/meAnyeli.jpg" class="me" alt="">
         <p class="me-name">Anyeli Rodríguez Desarrolladora &#128187;</p>
       </div>
@@ -104,6 +104,10 @@
         <!-- 2 -->
         <div class="slide">
           <img src="./imagenes/imagenes-habilidades/Python.png" alt="" id="jsslide" title="python">
+        </div>
+        <!--  -->
+         <div class="slide">
+          <img src="./imagenes/imagenes-habilidades/new-php-logo.svg" alt="" id="jsslide" title="php">
         </div>
         <!-- 3 -->
         <div class="slide" title="Sql">
@@ -176,7 +180,7 @@
   </br>
   <!-- seccion de proyectos -->
   <section class="proyecto-contenedor" id="proyecto-contenedor">
-    <h1 class="titulo-proyecto"><a class="titulo-proyecto-borde"><ion-icon name="code-working"
+    <h1 class="titulo-proyecto" id="titulo-proyecto"><a class="titulo-proyecto-borde" id="titulo-proyecto"><ion-icon name="code-working"
           class="code-working"></ion-icon> Proyectos</h1></a>
 
     <a href="./index.html" title="Este proyecto" class="link-g-proyecto" id="este-proyecto">
@@ -202,7 +206,7 @@
 
   <!-- seccion trabajos -->
   <section class="trabajo-contenedor" id="trabajo-contenedor">
-    <h1 class="titulo-trabajo"><ion-icon name="briefcase" class="briefcase"></ion-icon> Trabajos</h1>
+    <h1 class="titulo-trabajo" id="titulo-trabajo"><ion-icon name="briefcase" class="briefcase"></ion-icon> Trabajos</h1>
     <a href="https://casaabierta.org.do/" class="link-g-trabajos">
       <div class="trabajo-contenido">
         <h3 class="titulo-de-trabajo">Asociación Casa Abierta Inc.</h3>
@@ -220,7 +224,7 @@
 
   <!-- seccion de contactos -->
   <section class="contact" id="contact">
-    <h2><ion-icon name="mail" class="mail"></ion-icon>Contactos</h2>
+    <h2 id="mail"><ion-icon name="mail" class="mail"></ion-icon>Contactos</h2>
     <div class="contact-form-container">
       <div class="contact-form">
         <form action="https://formspree.io/f/mgebnklg" method="POST">
@@ -244,35 +248,10 @@
       </div>
     </div>
   </section>
-  <!-- sociales flotantes -->
-  <div class="socials">
-
-    <a href="https://discord.com/channels/@me" target="_blank" title="mi discord">
-      <ion-icon name="logo-discord" id="logo-discord"></ion-icon>
-    </a>
-
-    <a href="https://github.com/codeAnyeliRodriguez" target="_blank" title="mi github">
-      <ion-icon name="logo-github" id="flogo-githubf"></ion-icon>
-    </a>
-
-    <a href="https://www.linkedin.com/in/anyeli-b-castillo-rodriguez-140378271/" target="_blank" title="mi linkedin">
-
-      <ion-icon name="logo-linkedin" id="logo-linkedin"></ion-icon>
-    </a>
-  </div>
-  </br>
-  <footer>
-
-    <p class="f1">Built with ♡ by <a href="CV.html" class="f1-a">Anyeli Rodriguez</a><a id="este-proyecto" title="CV"
-        onclick="mostrarTitulo(this)"><ion-icon name="information-circle-outline" class="icono-info"></ion-ico></a></p>
-    <p class="f2">Github: <a href="https://github.com/codeAnyeliRodriguez" class="f2-a">
-        codeAnyeliRodriguez</a> </p>
-    <p class="f2">Discord: <a href="https://discord.com/channels/@me" class="f2-a">A. La bb💋#2825</a> </p>
-    <p class="codewars">Puedes ver como resuelvo algunos desafios de codigo mi perfil de: <a
-        href="https://www.codewars.com/users/codeAnyeliRodriguez1" class="f3-a">codewars <img
-          src="./imagenes/logo.codewars.svg" class="codeimg" alt=""></a></p>
-
-  </footer>
+  
+<!-- footer -->
+<div id="footerContainer"></div>
+<script src="script.js"></script>
 
   <!-- boton desplazarse hacia arriba -->
   <a href="#imagen-fondo">
@@ -284,9 +263,9 @@
 
   <!-- JS -->
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
   <script src="https://code.jquery.com/jquery-latest.js"></script>
   <script src='./app.js'> </script>
+
 </body>
 
 </html>

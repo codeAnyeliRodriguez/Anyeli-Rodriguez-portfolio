@@ -24,7 +24,8 @@ html {
 
 body {
   background: linear-gradient(to bottom right, black, #1b1b32, #3b3b4f);
-  background-attachment: fixed;
+  background-attachment: cover;
+  background-size: cover;
 }
 
 /* efecto de carga */
@@ -247,13 +248,14 @@ nav a:hover {
   display: flex;
   max-width: 217px;
   min-width: 216px;
+  box-shadow: 0 1px 8px purple;
 }
 
 .me {
   height: 100px;
   width: 100px;
   margin-left: 1%;
-  margin-top: 2%;
+  margin-top: 3%;
   margin-right: 2%;
 }
 
@@ -354,7 +356,7 @@ nav a:hover {
   color: white;
   text-align: center;
   margin-bottom: 20px;
-  font-size: 35px;
+  
  }
 
 
@@ -744,6 +746,12 @@ footer {
 .f1-a,.f2-a,.f3-a{
   color: yellow;
 }
+.fecha{
+  color: 	#C0C0C0;
+  float: right;
+  margin-right: 5px;
+  margin-top: 5px;
+}
 
 /* desplazarse hacia arriba */
 .desplazarse-hacia-arriba {
@@ -767,11 +775,16 @@ footer {
 /* ---- */
 /* Habilidades */
 
-.habilidades {
+.habilidadespag {
   max-width: 68.75rem;
   padding-top: 50px;
   text-align: center;
   margin-top: 2.5rem;
+  
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 35px;
 }
 
  .header-habilidad {
@@ -837,3 +850,24 @@ color: darkgray;
   color: white;
 }
 
+/* efecto para titulos */
+#desplazarse-hacia-arriba,#mi-linkedin,#mi-github,#contenedor-titulos,#mail,#titulo-trabajo,#titulo-proyecto,#habilidades{
+  font-size: 35px;
+  text-align: center;
+  transition: transform 0.3s; 
+}
+#desplazarse-hacia-arriba:hover,#mi-linkedin:hover,#mi-github:hover,#contenedor-titulos:hover,#mail:hover,#titulo-trabajo:hover,#titulo-proyecto:hover,#habilidades:hover {
+  transform: scale(1.2); 
+}
+/* ------ */
+.header-habilidad,.logo-javaScript,.trabajo-contenido,.proyecto-contenido,.slide,#transparent{
+  text-align: center;
+  transition: transform 0.3s; 
+}
+.header-habilidad:hover,.logo-javaScript:hover,.trabajo-contenido:hover,.proyecto-contenido:hover,.slide:hover,#transparent:hover {
+  transform: scale(1.2); 
+}
+#particles-js{
+  width: 100%;
+	height:100%;
+}
