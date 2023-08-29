@@ -35,12 +35,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 999;
+  color: white;
 }
 
 .spinner {
@@ -78,29 +79,29 @@ body {
 }
 
 .person {
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 17px;
 }
 
 .code-slashh {
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 17px;
   justify-content: center;
 }
 
 .code-working {
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 17px;
 }
 
 .briefcase {
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 17px;
 }
 
 .mail {
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 17px;
 }
 
 /* menu desplegable */
@@ -118,13 +119,10 @@ body {
 
 nav ul {
   list-style: none;
-  /* quitamos los puntos de la lista */
   margin: 0;
-  /* quitamos el margen */
   padding: 0;
-  /* quitamos el relleno */
   text-align: center;
-  background-color: black;
+  background-color: rgb(0, 0, 0, 0.3);
   z-index: 998;
   position: fixed;
   width: 100%;
@@ -137,20 +135,13 @@ nav li {
 
 nav a {
   display: block;
-  /* mostramos los enlaces como bloques para darles espacio */
-  padding: 10px;
-  /* agregamos un relleno para que los enlaces sean más fáciles de hacer clic */
+  padding: 3px;
   text-decoration: none;
-  /* quitamos la subrayado de los enlaces */
-  /*color: #000;*/
-  /* establecemos el color del texto */
   color: white;
 }
 
 nav a:hover {
-  /* background-color: black;*/
-  /* agregamos un fondo de color gris claro cuando el usuario pase el ratón por encima del enlace */
-  background-color: darkgreen;
+  background-color: rgb(0, 100, 0, 0.5);
 }
 
 
@@ -185,7 +176,7 @@ nav a:hover {
   .menu_bar {
     display: block;
     padding: 20px;
-    background: black;
+    background: rgb(0, 0, 0, 0.3);
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -210,23 +201,27 @@ nav a:hover {
 /* -------------- */
 
 .imagen-fondo {
-  background-image: url(./imagenes/pexels-vojtech-okenka-392018.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(./imagenes/munecaof.png);
+   background-size: 500px 500px ; 
+  background-position: right;
   background-repeat: no-repeat;
   padding-top: 170px;
   padding-bottom: 150px;
-  margin-top: 60px;
-  margin-bottom: 25px;
-  height: 265px;
-  width: 100%;
-  padding-left: 10px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  /* height: 265px; */
+  /* width: 100%; */
+  padding-left: 200px;
+  align-items: center;
+  text-align: center;
 }
 
 @media screen and (max-width:720px) {
   .imagen-fondo {
+    padding-left: 50px;
     margin-top: 50px;
     height: 300px;
+    padding-bottom: 50px;
   }
 }
 
@@ -240,34 +235,41 @@ nav a:hover {
 .transparent {
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.3);
-  height: 110px;
-  width: 30%;
+  height: 119px;
+  /* 110px */
+  width: 35%;
+  /* 30% */
   position: absolute;
   bottom: 100%;
   left: 20%;
   display: flex;
   max-width: 217px;
-  min-width: 216px;
+   min-width: 216px; 
   box-shadow: 0 1px 8px purple;
+  border-radius: 10px;
 }
 
 .me {
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
+  /* 100px */
   margin-left: 1%;
   margin-top: 3%;
   margin-right: 2%;
+  border-radius: 10px;
+  
 }
 
 .me-name {
   margin-top: 20px;
   color: white;
-
+ 
 }
 
 @media screen and (max-width: 359px){
   .transparent{
-    width: 20%;
+    width: 25%;
+    /* 20% */
     height: 70px;
     min-width: 150px;
   }
@@ -297,12 +299,11 @@ nav a:hover {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-#maquina-escribir1 {
+#maquina-escribir1, #maquina-escribir3 {
   border-right: 5px solid white;
   margin: 0;
   text-align: center;
   /* background: yellow;  */
-
   /*cursor  */
   animation: typing 4s steps(12), blink .5s infinite step-end alternate;
   overflow: hidden;
@@ -316,7 +317,7 @@ nav a:hover {
 
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
@@ -356,7 +357,7 @@ nav a:hover {
   color: white;
   text-align: center;
   margin-bottom: 20px;
-  
+  z-index: 980;
  }
 
 
@@ -400,7 +401,8 @@ nav a:hover {
 
 /* slider */
 .slider {
-  width: 75vw;
+  /* width: 75vw;
+  width: 100%; */
   height: auto;
   margin: auto;
   overflow: hidden;
@@ -531,7 +533,7 @@ nav a:hover {
 .enlace-proyecto,.enlace-trabajo{
   color: yellow;
   margin-top: 200px;
-  padding-top: 200px;
+  padding-top: 2px;
 }
 
 #este-proyecto{
@@ -696,6 +698,14 @@ nav a:hover {
   width: 50px;
   border-radius: 3px;
   margin-top: 10px;
+  
+}
+
+#mi-whatsappf{
+  height: 50px;
+  width: 50px;  
+  color:  #1cb840;
+  
 }
 
 #flogo-githubf {
@@ -727,7 +737,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(0, 0, 0, 0.5);
   box-sizing: border-box;
   width: 100%;
   position: relative;
@@ -851,12 +861,12 @@ color: darkgray;
 }
 
 /* efecto para titulos */
-#desplazarse-hacia-arriba,#mi-linkedin,#mi-github,#contenedor-titulos,#mail,#titulo-trabajo,#titulo-proyecto,#habilidades{
+.skill-header,#mi-whatsapp,.ion,.icon-card,#desplazarse-hacia-arriba,#mi-linkedin,#mi-github,#contenedor-titulos,#mail,#titulo-trabajo,#titulo-proyecto,#habilidades{
   font-size: 35px;
   text-align: center;
   transition: transform 0.3s; 
 }
-#desplazarse-hacia-arriba:hover,#mi-linkedin:hover,#mi-github:hover,#contenedor-titulos:hover,#mail:hover,#titulo-trabajo:hover,#titulo-proyecto:hover,#habilidades:hover {
+.skill-header:hover,#mi-whatsapp:hover,.ion:hover,.icon-card:hover,#desplazarse-hacia-arriba:hover,#mi-linkedin:hover,#mi-github:hover,#contenedor-titulos:hover,#mail:hover,#titulo-trabajo:hover,#titulo-proyecto:hover,#habilidades:hover {
   transform: scale(1.2); 
 }
 /* ------ */
@@ -871,3 +881,77 @@ color: darkgray;
   width: 100%;
 	height:100%;
 }
+
+
+ 
+  #particles-js{
+    height: 700px;
+    position: fixed;
+    z-index: -1;
+  }
+  .skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+  color: white;
+  display: inline-block;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+/* --- */
+.en{
+  color: #6930f0;
+}
+
+.es{
+  color: rgb(239, 143, 10);
+}
+
+.check{
+  position: relative;
+  width:  50px;
+}
+
+.check::before{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background: #333;
+  border-radius: 25px;
+}
+
+.check::after{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 25px;
+  transition:  0.25s;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+
+.check:checked::after{
+  left: 25px;
+  border: 2px solid blue;
+}
+
+.check:checked:before{
+  background: blue;
+}
+  
