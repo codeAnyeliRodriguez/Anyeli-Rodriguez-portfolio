@@ -66,7 +66,7 @@ const maquinaescribir1 = (text = '', tiempo = 200, etiqueta = '') => {
 
 // para que el efecto se ejecute luego que la pagina cargue
 window.onload = function () {
-  maquinaescribir1('Hello World! I\'m Anyeli Rodríguez Full-Stack Developer. This is my portfolio where several of my projects will be, both mini games and utilities and more, I hope you like them.', 25, maquina1);
+  maquinaescribir1('Hello World! I\'m Anyeli Rodríguez Developer. This is my portfolio where several of my projects will be, both mini games and utilities and more, I hope you like them.', 25, maquina1);
 
 }
 
